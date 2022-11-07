@@ -7,7 +7,7 @@
 
         int n = int.Parse(Console.ReadLine());
 
-        for(int i = 0; i < n; ++i)
+        for(int i = 0; i < n && n < 1001; ++i)
         {
             try
             {

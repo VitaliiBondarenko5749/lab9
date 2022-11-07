@@ -42,7 +42,7 @@
 
     public int CompareTo(Person other) => GetHashCode().CompareTo(other.GetHashCode());
 
-    public override int GetHashCode() => (Name.GetHashCode() * 397) ^ Age;
+    public override int GetHashCode() => (Name.GetHashCode()+Age.GetHashCode());
     
     public override bool Equals(object? obj)
     {
